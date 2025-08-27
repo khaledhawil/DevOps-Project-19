@@ -6,7 +6,10 @@
 
 ***Welcome to this step-by-step guide on deploying an EKS cluster and application with complete CI/CD!***
 
-Are you looking to streamline your application delivery process and automate your infrastructure deployment? Look no further! In this project, I'll take you through the process of setting up an EKS cluster, deploying an application, and creating a CI/CD pipeline using Jenkins and Terraform.
+**Author:** [abdallahelmalawany](https://github.com/abdallahelmalawany)  
+**Project Repository:** [DevOps-Project-19](https://github.com/abdallahelmalawany/DevOps-Project-19)
+
+Are you looking to streamline your application delivery process and automate your infrastructure deployment? Look no further! In this comprehensive project, I'll take you through the process of setting up an EKS cluster, deploying an application, and creating a CI/CD pipeline using Jenkins and Terraform.
 
 We'll start with the basics and gradually dive deeper into the technical details, so you'll find this guide helpful whether you're a beginner or an experienced DevOps engineer. By the end of this article, you'll have a fully functional EKS cluster and a simple containerized application up and running, with a CI/CD pipeline that automates the entire process from code to production.
 
@@ -58,7 +61,7 @@ To embark on our CI/CD adventure, we'll need a trusty toolkit:
 
 ### **Source Code**
 
-You can download the complete source code inside this repository.
+You can download the complete source code from this repository: [https://github.com/abdallahelmalawany/DevOps-Project-19](https://github.com/abdallahelmalawany/DevOps-Project-19)
 
 ### **Prerequisites**
 
@@ -653,7 +656,7 @@ pipeline{
         stage('Checkout SCM') {
             steps {
                 script {
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vishal2505/terraform-eks-cicd.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/abdallahelmalawany/DevOps-Project-19.git']])
                 }
             }
         }
@@ -742,7 +745,7 @@ pipeline{
         stage('Checkout SCM') {
             steps {
                 script {
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vishal2505/terraform-eks-cicd.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/abdallahelmalawany/DevOps-Project-19.git']])
                 }
             }
         }
@@ -1006,23 +1009,29 @@ There are a lot of areas for improvement in this pipeline. Some of them are as b
 
 * **Monitoring and Logging:** Integrate monitoring tools (e.g., Prometheus, Grafana) and logging solutions (e.g., ELK Stack) to ensure real-time visibility and insights.
 
-## 🛠️ Author & Community  
+---
 
-This project is crafted by **[Harshhaa](https://github.com/NotHarshhaa)** 💡.  
-I’d love to hear your feedback! Feel free to share your thoughts.  
+## 👨‍💻 **Author Information**
 
-📧 **Connect with me:**
+**GitHub:** [@abdallahelmalawany](https://github.com/abdallahelmalawany)  
+**Project Repository:** [DevOps-Project-19](https://github.com/abdallahelmalawany/DevOps-Project-19)
 
-- **GitHub**: [@NotHarshhaa](https://github.com/NotHarshhaa)
-- **Blog**: [ProDevOpsGuy](https://blog.prodevopsguy.xyz)  
-- **Telegram Community**: [Join Here](https://t.me/prodevopsguy)  
+### 🤝 **Contributing**
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/abdallahelmalawany/DevOps-Project-19/issues).
+
+### 📝 **License**
+
+This project is open source and available under the [MIT License](LICENSE).
+
+### 🙏 **Acknowledgments**
+
+- Thanks to the open-source community for the amazing tools used in this project
+- AWS for providing excellent cloud infrastructure services
+- HashiCorp for Terraform
+- The Jenkins community for the CI/CD platform
 
 ---
 
-## ⭐ Support the Project  
+**⭐ If you found this project helpful, please give it a star on GitHub!**
 
-If you found this helpful, consider **starring** ⭐ the repository and sharing it with your network! 🚀  
-
-### 📢 Stay Connected  
-
-![Follow Me](https://imgur.com/2j7GSPs.png)

@@ -6,8 +6,11 @@
 
 ***Welcome to this step-by-step guide on deploying an EKS cluster and application with complete CI/CD!***
 
-**Author:** [abdallahelmalawany](https://github.com/abdallahelmalawany)  
-**Project Repository:** [DevOps-Project-19](https://github.com/abdallahelmalawany/DevOps-Project-19)
+**Authors:** 
+- [Khaled Hawil](https://github.com/khaledhawil)
+- [Abdallah Elmalawany](https://github.com/abdallahelmalawany)
+
+**Project Repository:** [DevOps-Project-19](https://github.com/khaledhawil/DevOps-Project-19)
 
 Are you looking to streamline your application delivery process and automate your infrastructure deployment? Look no further! In this comprehensive project, I'll take you through the process of setting up an EKS cluster, deploying an application, and creating a CI/CD pipeline using Jenkins and Terraform.
 
@@ -61,7 +64,7 @@ To embark on our CI/CD adventure, we'll need a trusty toolkit:
 
 ### **Source Code**
 
-You can download the complete source code from this repository: [https://github.com/abdallahelmalawany/DevOps-Project-19](https://github.com/abdallahelmalawany/DevOps-Project-19)
+You can download the complete source code from this repository: [https://github.com/khaledhawil/DevOps-Project-19](https://github.com/khaledhawil/DevOps-Project-19)
 
 ### **Prerequisites**
 
@@ -656,7 +659,7 @@ pipeline{
         stage('Checkout SCM') {
             steps {
                 script {
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/abdallahelmalawany/DevOps-Project-19.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/khaledhawil/DevOps-Project-19.git']])
                 }
             }
         }
@@ -745,7 +748,7 @@ pipeline{
         stage('Checkout SCM') {
             steps {
                 script {
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/abdallahelmalawany/DevOps-Project-19.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/khaledhawil/DevOps-Project-19.git']])
                 }
             }
         }
@@ -1010,19 +1013,6 @@ There are a lot of areas for improvement in this pipeline. Some of them are as b
 * **Monitoring and Logging:** Integrate monitoring tools (e.g., Prometheus, Grafana) and logging solutions (e.g., ELK Stack) to ensure real-time visibility and insights.
 
 ---
-
-## 👨‍💻 **Author Information**
-
-**GitHub:** [@abdallahelmalawany](https://github.com/abdallahelmalawany)  
-**Project Repository:** [DevOps-Project-19](https://github.com/abdallahelmalawany/DevOps-Project-19)
-
-### 🤝 **Contributing**
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/abdallahelmalawany/DevOps-Project-19/issues).
-
-### 📝 **License**
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ### 🙏 **Acknowledgments**
 
